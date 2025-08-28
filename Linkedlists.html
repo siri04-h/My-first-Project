@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linked list</title>
+     <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Linked Lists</h1>
+        <div id="A">
+        <h2>What is linked lists?</h2>
+        <p>A Linked List is a linear data structure where elements are stored in nodes, and each node points to the next node in the sequence
+            Unlike arrays, linked lists don’t use contiguous memory, allowing dynamic memory usage.</p>
+        </div>
+        <h2>Structure of a Node:</h2>
+        <div id="B">
+            <h3>Each node typically contains </h3>
+            <ol>
+                <li>Data – The value of the node</li>
+                <li>Pointer/Link – Address of the next node</li>
+            </ol>
+            <h3>Visual Example:</h3>
+            <h3>[10 | *] → [20 | *] → [30 | NULL]</h3>
+        </div>
+        <h2>Types of Linked Lists</h2>
+        <div id="C">
+            <ol>
+                <li>Singly Linked List</li>
+                <ul>
+                    <li>Each node points to the next node only.</li>
+                    <li>Last node points to NULL.</li>
+                </ul>
+                <li>Doubly Linked List</li>
+                <ul>
+                    <li>Each node has two pointers: next and prev.</li>
+                    <li>Allows traversal in both directions.</li>
+                </ul>
+                <li>Circular Linked List</li>
+                <ul>
+                    <li>Last node links back to the first node instead of NULL.</li>
+                </ul>
+            </ol>
+        </div>
+        <h2>Basic Operations on Linked Lists</h2>
+        <div id="D">
+            <ol>
+                <li>Traversal</li>
+                <ul>
+                    <li>Visiting each node in sequence</li>
+                    <li>Time Complexity: O(n)</li>
+                </ul>
+                <li>Insertion</li>
+                <ul>
+                    <li>Add node at beginning, middle, or end.</li>
+                    <li>Time Complexity:</li>
+                    <ul>
+                        <li>Beginning: O(1)</li>
+                        <li>End/Middle: O(n)</li>
+                    </ul>
+                </ul>
+                <li>Deletion</li>
+                <ul>
+                    <li>Remove a node by value or position.</li>
+                    <li>Time Complexity: O(n)</li>
+                </ul>
+                <li>Search</li>
+                <ul>
+                    <li>Look for a value in the list.</li>
+                    <li> Time Complexity: O(n)</li>
+                </ul>
+            </ol>
+        </div>
+        <h2>Advantages of Linked Lists:</h2>
+        <div id="E">
+            <ul>
+                <li>Dynamic size – Grows/shrinks during runtime</li>
+                <li>Efficient insert/delete – No shifting needed</li>
+                <li>No memory wastage – Allocates memory as needed</li>
+            </ul>
+        </div>
+        <h2> Disadvantages of Linked Lists:</h2>
+        <div id="F">
+            <ul>
+                <li>No direct access to elements (must traverse)</li>
+                <li>Uses extra memory for pointers</li>
+                <li>More complex than arrays</li>
+            </ul>
+        </div>
+        <p>Example code:</p>
+        <div class="code-block">
+        <pre><code>
+            #include stdio.h
+            #include stdlib.h
+            struct Node {
+            int data;
+            struct Node* next;
+            };
+            void insert(struct Node** head, int value) {
+            struct Node* newNode = malloc(sizeof(struct Node));
+            newNode->data = value;
+            newNode->next = NULL;
+            if (*head == NULL) {
+                *head = newNode;
+                    return;
+            }
+            struct Node* temp = *head;
+            while (temp->next) temp = temp->next;
+                temp->next = newNode;
+            }
+            void display(struct Node* head) {
+            while (head) {
+                printf("%d -> ", head->data);
+                head = head->next;
+            }
+                printf("NULL\n");
+            }
+            int main() {
+            struct Node* head = NULL;
+            insert(&head, 10);
+            insert(&head, 20);
+            insert(&head, 30);
+            display(head);
+            return 0;
+            }
+        </code></pre>
+        </div>
+        <h3>For more information follw the link:</h3>
+        <a href="https://youtu.be/c7BTS7QOEDM" class="btn">Click me!!</a>
+    </div>
+</body>
+</html>

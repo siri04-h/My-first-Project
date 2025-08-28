@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+}
+body{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    justify-content: center;
+}
+.page{
+   background: white;
+   width: 794px;
+   min-width: 1123px;
+   padding: 40px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   border-radius: 8px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+div{
+    display: block;
+    align-items: center;
+}
+#Arrays{
+   height: 100px;
+   width: 200px; 
+   background-color: bisque;
+   border: 3px solid black;
+   text-align: center;
+   font-size: xx-large;
+}
+#Linkedlists{
+   height: 100px;
+   width: 200px; 
+   background-color: bisque;
+   border: 3px solid black;
+   text-align: center;
+   font-size: xx-large;
+}
+#Summary{
+   height: 100px;
+   width: 200px; 
+   background-color: bisque;
+   border: 3px solid black;
+   text-align: center;
+   font-size: xx-large;
+}
+#Trees{
+   height: 100px;
+   width: 200px; 
+   background-color: bisque;
+   border: 3px solid black;
+   text-align: center;
+   font-size: xx-large;
+}
+#Sorting{
+   height: 100px;
+   width: 200px; 
+   background-color: bisque;
+   border: 3px solid black;
+   text-align: center;
+   font-size: xx-large;
+}
+#container{
+   height: 600px;
+   width: 300px;
+   background-color: beige;
+   border: 3px solid black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+}

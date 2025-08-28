@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="page">
+    <h1>Arrays</h1>
+    <h2>What is Array?</h2>
+    <div id="A">
+    <p>An array is a linear data structure that stores a fixed-size sequential collection of elements of the same data type. Each element is identified by an index or subscript, starting from 0 in most programming languages.
+    Arrays are widely used because they provide fast access to elements and are easy to implement.</p>
+    </div>
+    <br>
+    <h2>Array structure</h2>
+    <div id="B">
+    <ul>
+        <li>Memory is allocated contiguously.</li>
+        <li>Elements are stored in a single block.</li>
+        <li>Indexing starts at 0</li>
+    </ul>
+    <h4>Example:</h4>
+    <h4>Index:     0    1    2    3    4</h4>
+    <h4>Values:   10   20   30   40   50</h4>
+    </div>
+    <br>
+    <h2>Array Types</h2>
+    <div id="C">
+    <ol>
+        <li>One-dimensional array – Basic array (linear list)</li>
+        <li>Two-dimensional array – Matrix or table-like structure</li>
+        <li>Multidimensional array – Higher-level nesting (rarely used directly)</li>
+    </ol>
+    </div>
+    <h2>Common Operations on Arrays:</h2>
+    <div id="D">
+    <ol>
+        <li>Traversal:</li>
+        <ul>
+            <li>Visiting each element one by one.</li>
+            <li>Time Complexity: O(n)</li>
+        </ul>
+        <li>Insertion:</li>
+        <ul>
+            <li>Adding an element at a specific index</li>
+            <li>Requires shifting elements if not at the end</li>
+            <li>Time Complexity:At end: O(1),At beginning/middle: O(n)</li>
+        </ul>
+        <li>Deletion:</li>
+        <ul>
+            <li>Removing an element from a specific index</li>
+            <li>Requires shifting elements to fill the gap</li>
+            <li> Time Complexity: O(n)</li>
+        </ul>
+        <li>Searching:</li>
+        <ul>
+            <li>Finding an element in the array.</li>
+            <li> Time Complexity:Linear Search: O(n),Binary Search (only for sorted arrays): O(log n)</li>
+        </ul>
+        <li>Accessing Elements</li>
+        <ul>
+            <li>Getting the value at a specific index</li>
+            <li> Time Complexity: O(1)</li>
+        </ul>
+    </ol>
+    </div>
+    <h2>Advantage of Arrays:</h2>
+    <div id="E">
+    <ul>
+        <li>Fast access with O(1) time using index.</li>
+        <li>Easy to implement and understand.</li>
+        <li>Efficient use of memory when the number of elements is known.</li>
+    </ul>
+    </div>
+    <h2>Disadvantage of Arrays:</h2>
+    <div id="F">
+    <ul>
+        <li>Fixed size – cannot be resized after declaration</li>
+        <li>Insertion/Deletion is costly – requires shifting elements.</li>
+        <li>Wasted memory if size is overestimated.</li>
+    </ul>
+    </div>
+    <h4>Example Code(python):</h4>
+    <div class="code-block">
+    <pre><code>
+       arr = [5, 12, 7, 9]
+       key = 7
+       found = False
+       for i in range(len(arr)):
+         if arr[i] == key:
+           found = True
+           print(f"Element found at index {i}")
+           break
+       if not found:
+            print("Element not found")
+    </code></pre>
+    </div>
+    <h3>For extra details follow this link!!</h3>
+    <a href="https://www.youtube.com/watch?v=AT14lCXuMKI&list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" class="btn">Click me!</a>
+    </div>
+</body>
+</html>

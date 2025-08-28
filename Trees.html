@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trees</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Trees</h1>
+        <div id="A">
+        <h2>What is Trees?</h2>
+        <p>A Tree is a non-linear hierarchical data structure made up of nodes. It represents relationships in a parent-child manner.</p>
+        <ul>
+            <li>It starts from a root node.</li>
+            <li>Each node can have zero or more children.</li>
+            <li>There are no cycles in a tree</li>
+        </ul>
+        </div>
+        <h2>Types of Trees</h2>
+        <div id="C">
+            <ol>
+                <li>Binary Tree</li>
+                <ul>
+                    <li>Each node has at most 2 children (left and right)</li>
+                </ul>
+                <li>Binary Search Tree(BST)</li>
+                <ul>
+                    <li>Left child < Parent < Right child</li>
+                    <li>Used for fast searching and sorting</li>
+                </ul>
+                <li>AVL tree</li>
+                <ul>
+                    <li>Self-balancing BST with height difference control</li>
+                </ul>
+                <li>Heap</li>
+                <ul>
+                    <li>Complete binary tree used in priority queues</li>
+                    <li>Max-Heap: Parent ≥ Children</li>
+                    <li>Min-Heap: Parent ≤ Children</li>
+                </ul>
+            </ol>
+        </div>
+        <h2>Operations on Tree:</h2>
+        <div id="D">
+            <ol>
+                <li>Insertion – Add a new node</li>
+                <li>Deletion – Remove a node</li>
+                <li>Searching – Find a value</li>
+                <li>Traversal – Visit all nodes</li>
+            </ol>
+        </div>
+        <h2>Advantages of Trees:</h2>
+        <div id="E">
+            <ul>
+                <li>Efficient for hierarchical data</li>
+                <li>Fast search, insert, delete (in balanced trees)</li>
+                <li>Dynamic memory usage</li>
+                <li>Inorder traversal gives sorted data</li>
+            </ul>
+        </div>
+        <h2> Disadvantages of Trees:</h2>
+        <div id="F">
+            <ul>
+                <li>Complex to implement</li>
+                <li>Extra memory for pointers</li>
+                <li>Slower if unbalanced</li>
+                <li>Harder to visualize and debug</li>
+            </ul>
+        </div>
+        <p>Example code:</p>
+        <div class="code-block">
+        <pre><code>
+            #include stdio.h
+            #include stdlib.h
+            struct Node {
+                int data;
+                struct Node *left, *right;
+            };
+
+            struct Node* create(int val) {
+                struct Node* new = malloc(sizeof(struct Node));
+                new->data = val;
+                new->left = new->right = NULL;
+                return new;
+            }   
+
+            void inorder(struct Node* root) {
+                if (root) {
+                    inorder(root->left);
+                    printf("%d ", root->data);
+                    inorder(root->right);
+                }
+            }
+
+            int main() {    
+                struct Node* root = create(10);
+                root->left = create(5);
+                root->right = create(20);
+                inorder(root);  // Output: 5 10 20
+                return 0;
+            }
+        </code></pre>
+        </div>
+          <h3>For extra details follow this link!!</h3>
+            <a href="https://www.youtube.com/watch?v=YAdLFsTG70w&list=PLAuemBFSZV1oE256PESc8ku8MX3xMQYJF" class="btn">Click me!</a>
+    </div>
+</body>
+</html>

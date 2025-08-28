@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="page">
+        <h1>Sorting</h1>
+        <div id="A">
+        <h2>What is Sorting?</h2>
+        <p>Sorting is the process of arranging data elements in a specific order, typically ascending or descending.</p>
+        <p>It helps in faster searching, clean data presentation, and efficient data processing.</p>
+        </div>
+        <h2>Classification:</h2>
+        <div id="B">
+            <ul>
+                <li>Comparison-based: Bubble, Selection, Insertion, Merge, Quick, Heap</li>
+                <li>Non-comparison-based: Counting, Radix, Bucket (for numbers only)</li>
+            </ul>
+        </div>
+        <h2>Basic Operations:</h2>
+        <div id="C">
+            <ul>
+                <li>Compare: Two elements are compared</li>
+                <li>Swap: If out of order, elements are exchanged</li>
+                <li>Divide: Some algorithms (like Merge, Quick) split the array</li>
+                <li>Merge: Combine subarrays in sorted order</li>
+            </ul>
+        </div>
+        <h2>Advantages of Sorting:</h2>
+        <div id="D">
+            <ul>
+                <li>Makes searching faster (e.g., Binary Search)</li>
+                <li>Organizes data in meaningful order</li>
+                <li>Useful in data processing, analytics, and databases</li>
+                <li>Helps in efficient decision-making systems</li>
+            </ul>
+        </div>
+        <h2>Disadvantage of Sorting:</h2>
+        <div id="E">
+            <ul>
+                <li>Some sorting algorithms are slow (O(n²))</li>
+                <li>Extra memory required in some (e.g., Merge Sort)</li>
+                <li>Unstable sorting may lose relative order (e.g., Quick Sort)</li>
+                <li>Choosing the right algorithm can be complex</li>
+            </ul>
+        </div>
+        <p>Example code:</p>
+        <div class="code-block">
+        <pre><code>
+          #include stdio.h
+          void bubble(int a[], int n) {
+            for (int i = 0; i < n-1; i++)
+                for (int j = 0; j < n-i-1; j++)
+                    if (a[j] > a[j+1]) {
+                        int t = a[j];
+                        a[j] = a[j+1];
+                        a[j+1] = t;
+               }
+            }
+
+        int main() {
+            int a[] = {5, 2, 9, 1, 3};
+            int n = 5;
+            bubble(a, n);
+            for (int i = 0; i < n; i++)
+                printf("%d ", a[i]);
+            return 0;
+        }
+        </code></pre>
+        </div>
+        <p>For more information follw the link:</p>
+        <a href="https://www.youtube.com/watch?v=o4bAoo_gFBU&list=PLuZ_bd9XlByzTIP5j1aWXo7smCIxvzd2D" class="btn">Click me!!</a>
+    </div>
+</body>
+</html>

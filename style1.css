@@ -1,0 +1,77 @@
+body{
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+}
+.page{
+   background: white;
+   width: 794px;
+   min-width: 1123px;
+   margin: 0 auto;
+   padding: 40px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+   border-radius: 8px;
+h1{
+    text-align: center;
+    font-family: Lucida Sans;
+    text-decoration: underline;
+}
+h2{
+    font-family: Georgia;
+    text-decoration: underline;
+}
+
+#B{
+    font-family: lucida sans;
+    font-size: medium;
+}
+#A{
+    font-family: lucida sans;
+    font-size: medium;
+}
+#C{
+    font-family: lucida sans;
+    font-size: medium;
+}
+#D{
+    font-family: lucida sans;
+    font-size: medium;
+}
+#E{
+    font-family: lucida sans;
+    font-size: medium;
+}
+#F{
+    font-family: lucida sans;
+    font-size: medium;
+}
+.btn{
+    height: 10px;
+    width: 100px;
+    background-color: beige;
+    border: 2px soild black;
+}
+p{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+.code-block{
+    display: flex;
+    justify-content:  center;
+    margin-top: 20px;
+}
+code{
+    font-family: monospace;
+    font-size: 16px;
+    white-space: pre-wrap;
+    display: block;
+}
+pre{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-width: 90%;
+    overflow-x: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
